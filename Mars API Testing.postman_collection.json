@@ -1692,20 +1692,20 @@
               "listen": "test",
               "script": {
                 "exec": [
-                  "// Get remaining language IDs from environment",
+                  
                   "let remaining = pm.environment.get(\"languageIds\");",
                   "",
-                  "// Parse if stored as string",
+                 
                   "if (typeof remaining === \"string\") {",
                   "    remaining = JSON.parse(remaining);",
                   "}",
                   "",
-                  "// Safety check",
+                 
                   "if (!Array.isArray(remaining)) {",
                   "    remaining = [];",
                   "}",
                   "",
-                  "// Log status only — no flow control",
+                 
                   "if (remaining.length > 0) {",
                   "    console.log(\"Languages still remaining to delete:\", remaining.length);",
                   "} else {",
